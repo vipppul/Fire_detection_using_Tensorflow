@@ -20,5 +20,5 @@ class F1History(tf.keras.callbacks.Callback):
         self.f1s.append(f1)
         logs = logs or {}
         # logs["f1"]= f1
-        logs["val_f1"] = f1   # ← add the “val_” prefix
+        logs["val_f1"] = f1
         self.f1s.append(f1)
